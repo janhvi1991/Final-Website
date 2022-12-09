@@ -1,0 +1,168 @@
+/* Page Settings */
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #f3fcf0;
+}
+
+#page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'ailerons-typeface';
+  src: url(ailerons-typeface.otf);
+}
+
+.navbar1{
+  font-family: 'Montserrat', sans-serif;
+  width: 65%;
+  margin: auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ee4266;
+  font-weight: 600;
+  background-color: inherit;
+}
+
+li a:hover {
+  color: #ffd23f;
+}
+
+.div1{
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  align-items: left;
+  justify-content: left;
+  width: fit-content;
+}
+
+.div2, .div5{
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  align-items: right;
+  justify-content: right;
+  width: fit-content;
+}
+
+.div3 {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  align-items: right;
+  justify-content: right;
+  width: fit-content;
+}
+
+.div4 {
+  display: none;
+  position: absolute;
+  min-width:max-content;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.div4 a {
+  color: #ee4266;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.div3:hover .div4 {
+  display: block;
+}
+
+.div4 a:hover {
+  color: #FFBE0B;
+}
+
+#footer{
+  display: block;
+  margin: auto;
+  width: 65%;
+  text-align: center;
+}
+
+.icons{
+  padding: 10px;
+  align-self: center;
+}
+
+.footer-text{
+  text-align: center;
+}
+
+.container{
+  margin: auto;
+  display: block;
+  width: 60%;
+  text-align: center;
+}
+
+.banner{
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+.images{
+  padding-top: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.text{
+  font-family: 'Montserrat',sans-serif;
+  padding-top: 30px;
+}
+
+h1{
+  color: #ee4266;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h3{
+  color: #ee4266;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p{
+  color: #540d6e;
+  font-weight: 400;
+  font-size: 14px;
+  text-align:justify;
+}
+
+.video{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}

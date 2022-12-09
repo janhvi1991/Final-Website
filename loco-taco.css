@@ -1,0 +1,660 @@
+/* Colours
+540d6e - purple
+ee4266 - pink
+ffd23f - yellow
+f3fcf0 - background
+
+*/
+
+/* Page Settings */
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #f3fcf0;
+  font-family: 'Montserrat', sans-serif;
+  color: #6C6C6C;
+}
+
+.navbar{
+  font-family: 'Montserrat', sans-serif;
+  width: 65%;
+  margin: auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ee4266;
+  font-weight: 600;
+}
+
+li a:hover {
+  color: #ffd23f;
+}
+
+.div1{
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  align-items: left;
+  justify-content: left;
+  width: fit-content;
+}
+
+.div2, .div5{
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  align-items: right;
+  justify-content: right;
+  width: fit-content;
+}
+
+.div3 {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  align-items: right;
+  justify-content: right;
+  width: fit-content;
+}
+
+.div4 {
+  display: none;
+  position: absolute;
+  min-width:max-content;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.div4 a {
+  color: #ee4266;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.div3:hover .div4 {
+  display: block;
+}
+
+.div4 a:hover {
+  color: #FFBE0B;
+}
+
+.footer{
+  clear: both;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+  background-color: #f3fcf0;
+}
+
+.contact1{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+}
+
+.contact2{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+
+.icons{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.linkedin, .email{
+  padding-right: 12px;
+  padding-left: 12px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8;
+}
+
+.linkedin:hover, .email:hover{
+  opacity: 50%;
+}
+
+.container{
+  display: block;
+  background-color: white;
+}
+
+.text-1{
+  display: block;
+  width: 60%;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  color: #3b3b3b;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: white;
+}
+
+.info{
+  background-color: inherit;
+  margin-top: 50px;
+  width: 40%;
+  float: left;
+}
+
+.role{
+  background-color: inherit;
+  margin-top: 50px;
+  width: 40%;
+  float: right;
+}
+
+h3{
+  background-color: inherit;
+  color: #f89e2a;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ol{
+  background-color: inherit;
+  list-style-type: inherit;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+li{
+  background-color: inherit;
+  margin-top: 6px;
+}
+
+br{
+  background-color: inherit;
+}
+
+p{
+  background-color: inherit;
+}
+
+.video{
+  display: block;
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  padding-top: 500px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.container-1{
+  background-color: white;
+}
+
+.container-2{
+  display: block;
+  background-color: #f9f9f7;
+}
+
+.text-2{
+  display: block;
+  width: 60%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: #3b3b3b;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f9f9f7;
+}
+
+.container-3{
+  display: block;
+  background-color: white;
+  padding: 50px;
+}
+
+.container-3-contents{
+  background-color: inherit;
+  margin-left: 200px;
+}
+
+.text-3{
+  margin: auto;
+  position: relative;
+  bottom:120px;
+  font-family: 'Montserrat', sans-serif;
+  color: #3b3b3b;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: inherit;
+  width: 30%;
+  display: inline-block;
+}
+
+.image-problems{
+  background-color: inherit;
+  display: inline-block;
+  width: 60%;
+}
+
+.container-4{
+  display: block;
+  background-color: white;
+  padding: 70px;
+}
+
+.container-4-contents{
+  background-color: inherit;
+  margin-left: 200px;
+}
+
+.text-4{
+  margin: auto;
+  position: relative;
+  bottom:70px;
+  font-family: 'Montserrat', sans-serif;
+  color: #3b3b3b;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: inherit;
+  width: 30%;
+  display: inline-block;
+}
+
+.image-solution{
+  background-color: inherit;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  width: 65%;
+  padding-left: 40px;
+}
+
+.container-5{
+  display: block;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: white;
+}
+
+.research{
+  background-color: inherit;
+}
+
+.text-5{
+  display: block;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 50px;
+  background-color: inherit;
+}
+
+.research-text{
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: inherit;
+}
+
+.mind-map{
+  background-color: inherit;
+}
+
+.divider{
+  background-color: #f9f9f7;
+  line-height: 5px;
+}
+
+.five-w{
+  display: block;
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.w-text{
+  background-color: inherit;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.w-image{
+  vertical-align: middle;
+  background-color: inherit;
+}
+
+.user-personas{
+  display: block;
+  background-color: inherit;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.persona-text{
+  background-color: inherit;
+  margin: auto;
+  width: 60%;
+  text-align: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.persona-image{
+  display: inline-block;
+  margin: auto;
+  background-color: inherit;
+  width: 80%;
+}
+
+.user-journey{
+  display: block;
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.journey-text{
+  background-color: inherit;
+  margin-bottom: 70px;
+}
+
+.journey-para{
+  padding-top: 30px;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.journey-image{
+  background-color: inherit;
+}
+
+
+.user-flow{
+  display: block;
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.flow-text{
+  background-color: inherit;
+  margin-bottom: 70px;
+}
+
+.flow-para{
+  padding-top: 30px;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flow-image{
+  background-color: inherit;
+}
+
+.container-6{
+  background-color: #f9f9f7;
+}
+
+.wireframes{
+  display: block;
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.paper-wireframes, .digital-wireframes{
+  background-color: inherit;
+}
+
+.paper-wireframes-text, .digital-wireframes-text{
+  background-color: inherit;
+}
+
+.paper-image{
+  background-color: inherit;
+  display: block;
+  text-align: center;
+}
+
+.container-digital-wireframes-images{
+  display: block;
+  background-color: #f9f9f7;
+  padding-bottom: 70px;
+}
+
+.container-7{
+  background-color: inherit;
+  width: 80%;
+  margin: auto;
+}
+
+.digital-image{
+  background-color: inherit;
+  display: block;
+  text-align: center;
+}
+
+.digital-image-individual{
+  background-color: inherit;
+  padding: 5px;
+  transition: 400ms ease;
+}
+
+.digital-image-individual:hover{
+  cursor: pointer;
+  opacity: 0.6;
+  display: inline-block;
+  background-color: inherit;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: inherit;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  background-color: inherit;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: transparent;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container-8{
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.style-guide{
+  background-color: inherit;
+}
+
+.style-guide-text{
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+}
+
+.style-guide-image{
+  background-color: inherit;
+  padding-top: 50px;
+  width: 70%;
+  margin: auto;
+}
+
+.container-9{
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.prototype{
+  background-color: inherit;
+}
+
+.prototype-text{
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+}
+
+.prototype-image{
+  background-color: inherit;
+  padding-top: 50px;
+  width: 70%;
+  margin: auto;
+  transition: transform .5s;
+  cursor: zoom-in;
+}
+
+.prototype-image:hover{
+  transform: scale(1.4);
+}
+
+.prototype-link{
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.link{
+  background-color: inherit;
+  color: inherit;
+}
+
+.container-10{
+  background-color: #f9f9f7;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.takeaway{
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+}
+
+.disclaimer{
+  background-color: #f9f9f7;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.disclaimer-text{
+  background-color: inherit;
+  width: 60%;
+  margin: auto;
+}

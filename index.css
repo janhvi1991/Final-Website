@@ -167,10 +167,13 @@ p{
 }
 
 .footer{
-  clear: both;
+  position: absolute;
+  bottom: 0;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   margin-top: 50px;
+  display: block;
+  width: 100%;
 }
 
 .contact1{

@@ -97,11 +97,11 @@ li a:hover {
 }
 
 .footer{
-  clear: both;
-  width: 25%;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 20px;
+  margin-top: 50px;
+  display: block;
+  width: 100%;
 }
 
 .contact1{

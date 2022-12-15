@@ -24,18 +24,202 @@
     />
   </head>
   <body>
-    <div class="project-1">
-      <a href="loco-taco-html">
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
         <img
-          src="Images/UX Project/loco-taco.jpg"
-          alt="loco-taco"
-          class="loco-taco"
-          style="width: 100%"
+          src="Images/0004.jpg"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow"
+          width="400px"
         />
-        <div class="middle">
-          <div class="loco-taco-text">Loco Taco</div>
-        </div>
-      </a>
+      </div>
+      <div class="column">
+        <img
+          src="Images/0005.jpg"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0006.jpg"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0007.jpg"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0008.jpg"
+          onclick="openModal();currentSlide(5)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0009.jpg"
+          onclick="openModal();currentSlide(6)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0010.jpg"
+          onclick="openModal();currentSlide(7)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0011.jpg"
+          onclick="openModal();currentSlide(8)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0012.jpg"
+          onclick="openModal();currentSlide(9)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0013.jpg"
+          onclick="openModal();currentSlide(10)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0014.jpg"
+          onclick="openModal();currentSlide(11)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="Images/0015.jpg"
+          onclick="openModal();currentSlide(12)"
+          class="hover-shadow"
+          width="400px"
+        />
+      </div>
     </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="Images/0004.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0005.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0006.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0007.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0008.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0009.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0010.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0011.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0012.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0013.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0014.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <img src="Images/0015.jpg" style="width: 100%" />
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
   </body>
 </html>

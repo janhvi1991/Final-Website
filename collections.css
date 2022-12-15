@@ -99,7 +99,7 @@ li a:hover {
 }
 
 #footer{
-  position: absolute;
+  position: relative;
   bottom: 0;
   height: 2.5rem;
   display: block;
@@ -108,6 +108,7 @@ li a:hover {
   align-items: center;
   margin: auto;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .icons{
@@ -122,10 +123,12 @@ li a:hover {
   align-content: center;
   justify-content: center;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .ajna{
-  display: block;
+  display: inline-block;
   margin: auto;
   padding: 20px;
   opacity: 1;
@@ -134,7 +137,7 @@ li a:hover {
 }
 
 .kali{
-  display: block;
+  display: inline-block;
   margin: auto;
   padding: 20px;
   opacity: 1;
@@ -146,8 +149,8 @@ li a:hover {
   transition: 0s ease;
   opacity: 0;
   position: absolute;
-  bottom: 70%;
-  left: 50%;
+  bottom: 40%;
+  left: 35%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -179,8 +182,8 @@ button{
   transition: 0s ease;
   opacity: 0;
   position: absolute;
-  top: 70%;
-  right: 40%;
+  bottom: 40%;
+  right: 23%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -204,6 +207,7 @@ button{
   background-color: #f3fcf0;
   font-size: 16px;
   font-weight: 500;
-  border-width: 2px;
+  border-width: 1.5px;
   box-shadow: 0px 5px 10px 0px rgba(69, 69, 69, 0.2);
+  cursor: pointer;
 }

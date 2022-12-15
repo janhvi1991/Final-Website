@@ -60,34 +60,258 @@
           <img src="Images/ajna1.JPG" alt="ajna-cover" width="300px">
         </div>
       </div>
-      <div class="container2">
-        <img src="Images/0004.jpg" alt="ajna-1" width="750px" class="images">
-        <img src="Images/0005.jpg" alt="ajna-2" width="750px" class="images">
-        <img src="Images/0006.jpg" alt="ajna-3" width="750px" class="images">
-        <img src="Images/0007.jpg" alt="ajna-4" width="750px" class="images">
-        <img src="Images/0008.jpg" alt="ajna-5" width="750px" class="images">
-        <img src="Images/0009.jpg" alt="ajna-6" width="750px" class="images">
-        <img src="Images/0010.jpg" alt="ajna-7" width="750px" class="images">
-        <img src="Images/0011.jpg" alt="ajna-8" width="750px" class="images">
-        <img src="Images/0012.jpg" alt="ajna-9" width="750px" class="images">
-        <img src="Images/0013.jpg" alt="ajna-10" width="750px" class="images">
-        <img src="Images/0014.jpg" alt="ajna-11" width="750px" class="images">
-        <img src="Images/0015.jpg" alt="ajna-12" width="750px" class="images">
-        <img src="Images/0016.jpg" alt="ajna-13" width="750px" class="images">
-        <img src="Images/0017.jpg" alt="ajna-14" width="750px" class="images">
-        <img src="Images/0018.jpg" alt="ajna-15" width="750px" class="images">
-        <img src="Images/0019.jpg" alt="ajna-16" width="750px" class="images">
-        <img src="Images/0020.jpg" alt="ajna-17" width="750px" class="images">
+    <!-- Images used to open the lightbox -->
+    <div class="container-2">
+      <div class="row">
+        <div class="column">
+          <img
+            src="Images/0004.jpg"
+            onclick="openModal();currentSlide(1)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0005.jpg"
+            onclick="openModal();currentSlide(2)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0006.jpg"
+            onclick="openModal();currentSlide(3)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0007.jpg"
+            onclick="openModal();currentSlide(4)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0008.jpg"
+            onclick="openModal();currentSlide(5)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0009.jpg"
+            onclick="openModal();currentSlide(6)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0010.jpg"
+            onclick="openModal();currentSlide(7)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0011.jpg"
+            onclick="openModal();currentSlide(8)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0012.jpg"
+            onclick="openModal();currentSlide(9)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0013.jpg"
+            onclick="openModal();currentSlide(10)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0014.jpg"
+            onclick="openModal();currentSlide(11)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0015.jpg"
+            onclick="openModal();currentSlide(12)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0016.jpg"
+            onclick="openModal();currentSlide(13)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0017.jpg"
+            onclick="openModal();currentSlide(14)"
+            class="hover-shadow"
+            width="370px"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="Images/0019.jpg"
+            onclick="openModal();currentSlide(15)"
+            class="hover-shadow"
+            width="370px"
+          />
+          <img
+          src="Images/0020.jpg"
+          onclick="openModal();currentSlide(16)"
+          class="hover-shadow"
+          width="370px"
+        />
+        </div>
       </div>
-      <br>
-      <br>
-      <br>
-      <div class="footer">
-        <p style="font-family: 'Montserrat', sans-serif; font-size: 12px;color: rgb(114, 114, 114);"><i>Padma was launched in 2018 by Janhvi Sampat. This is an archival page for the brand.</i></p>
-        <a href="https://www.facebook.com/padmathelabel/" target="_blank"><img src="Images/icons8-facebook-30.png" alt="" class="icons" style="height: 25px;"></a>
-        <a href="mailto:padmathelabel@gmail.com"><img src="Images/icons8-secured-letter-30.png" alt="" class="icons" style="height: 25px;"></a>
-        <a href="https://www.instagram.com/padmathelabel/" target="_blank"><img src="Images/icons8-instagram-30.png" alt="" class="icons" style="height: 25px;"></a>
+  
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <img src="Images/0004.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0005.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0006.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0007.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0008.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0009.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0010.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0011.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0012.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0013.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0014.jpg" style="width: 100%" />
+          </div>
+  
+          <div class="mySlides">
+            <img src="Images/0015.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="Images/0016.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="Images/0017.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="Images/0019.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides">
+            <img src="Images/0020.jpg" style="width: 100%" />
+          </div>
+  
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </div>
+    </div>
+
+    <div class="footer">
+      <p style="font-family: 'Montserrat', sans-serif; font-size: 12px;color: rgb(114, 114, 114);"><i>Padma was launched in 2018 by Janhvi Sampat. This is an archival page for the brand.</i></p>
+      <a href="https://www.facebook.com/padmathelabel/" target="_blank"><img src="Images/icons8-facebook-30.png" alt="" class="icons" style="height: 25px;"></a>
+      <a href="mailto:padmathelabel@gmail.com"><img src="Images/icons8-secured-letter-30.png" alt="" class="icons" style="height: 25px;"></a>
+      <a href="https://www.instagram.com/padmathelabel/" target="_blank"><img src="Images/icons8-instagram-30.png" alt="" class="icons" style="height: 25px;"></a>
+    </div>
+
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
     </div>
   </body>
 </html>

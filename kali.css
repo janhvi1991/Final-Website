@@ -155,19 +155,117 @@ h3{
   padding-left: 113px;
 }
 
-.container2{
+.container-2{
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row{
   display: block;
   width: 65%;
+  margin: auto;
   text-align: center;
+}
+
+.column {
+  display: inline-block;
   margin: auto;
 }
 
-.images{
-  padding: 23px;
-  cursor: zoom-in;
-  transition: 1s;
+.hover-shadow{
+  display: inline-block;
+  border: 1px solid rgb(231, 231, 231);
+  cursor: pointer;
+  margin: 5px;
+  background-color: inherit;
 }
 
-.images:hover{
-  transform: scale(1.5);
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: inherit;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  height: 100%;
+  max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: inherit;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  background-color: inherit;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(150, 150, 150);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: transparent;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(223, 223, 223, 0.8);
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

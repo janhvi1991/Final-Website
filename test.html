@@ -4,221 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
     <link rel="stylesheet" href="test.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <title>Test</title>
   </head>
   <body>
-    <!-- Images used to open the lightbox -->
-    <div class="row">
-      <div class="column">
-        <img
-          src="Images/0004.jpg"
-          onclick="openModal();currentSlide(1)"
-          class="hover-shadow"
-          width="400px"
-        />
+    <div class="container">
+      <div class="lottie-bg">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://lottie.host/5a14af91-112d-45b9-bcaa-067110a6a99f/rmbhTSZ6Zq.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
-      <div class="column">
-        <img
-          src="Images/0005.jpg"
-          onclick="openModal();currentSlide(2)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0006.jpg"
-          onclick="openModal();currentSlide(3)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0007.jpg"
-          onclick="openModal();currentSlide(4)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0008.jpg"
-          onclick="openModal();currentSlide(5)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0009.jpg"
-          onclick="openModal();currentSlide(6)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0010.jpg"
-          onclick="openModal();currentSlide(7)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0011.jpg"
-          onclick="openModal();currentSlide(8)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0012.jpg"
-          onclick="openModal();currentSlide(9)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0013.jpg"
-          onclick="openModal();currentSlide(10)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0014.jpg"
-          onclick="openModal();currentSlide(11)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-      <div class="column">
-        <img
-          src="Images/0015.jpg"
-          onclick="openModal();currentSlide(12)"
-          class="hover-shadow"
-          width="400px"
-        />
-      </div>
-    </div>
-
-    <!-- The Modal/Lightbox -->
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-        <div class="mySlides">
-          <img src="Images/0004.jpg" style="width: 100%" />
+      <div class="section">
+        <div class="intro1">
+          <h1>Hi, I'm <a href="about.html" class="name">Janhvi</a></h1>
         </div>
-
-        <div class="mySlides">
-          <img src="Images/0005.jpg" style="width: 100%" />
+        <div class="intro2">
+          <p>
+            I am a
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["fashion designer","project manager","UI/UX student","design enthusiast","cat-mom"]'
+            ></span>
+          </p>
         </div>
-
-        <div class="mySlides">
-          <img src="Images/0006.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0007.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0008.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0009.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0010.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0011.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0012.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0013.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0014.jpg" style="width: 100%" />
-        </div>
-
-        <div class="mySlides">
-          <img src="Images/0015.jpg" style="width: 100%" />
-        </div>
-
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </div>
 
     <script>
-      // Open the Modal
-      function openModal() {
-        document.getElementById("myModal").style.display = "block";
-      }
-
-      // Close the Modal
-      function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-      }
-
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {
-          slideIndex = 1;
+      class TypeWriter {
+        constructor(txtElement, words, wait = 3000) {
+          this.txtElement = txtElement;
+          this.words = words;
+          this.txt = "";
+          this.wordIndex = 0;
+          this.wait = parseInt(wait, 10);
+          this.type();
+          this.isDeleting = false;
         }
-        if (n < 1) {
-          slideIndex = slides.length;
+
+        type() {
+          // Current index of word
+          const current = this.wordIndex % this.words.length;
+          // Get full text of current word
+          const fullTxt = this.words[current];
+
+          // Check if deleting
+          if (this.isDeleting) {
+            // Remove characters
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+            // Add charaters
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+
+          // Insert txt into element
+          this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+          // Initial Type Speed
+          let typeSpeed = 70;
+
+          if (this.isDeleting) {
+            // Increase speed by half when deleting
+            typeSpeed /= 2;
+          }
+
+          // If word is complete
+          if (!this.isDeleting && this.txt === fullTxt) {
+            // Make pause at end
+            typeSpeed = this.wait;
+            // Set delete to true
+            this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === "") {
+            this.isDeleting = false;
+            // Move to next word
+            this.wordIndex++;
+            // Pause before start typing
+            typeSpeed = 500;
+          }
+
+          setTimeout(() => this.type(), typeSpeed);
         }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
+      }
+
+      // Init On DOM Load
+      document.addEventListener("DOMContentLoaded", init);
+
+      // Init App
+      function init() {
+        const txtElement = document.querySelector(".txt-type");
+        const words = JSON.parse(txtElement.getAttribute("data-words"));
+        const wait = txtElement.getAttribute("data-wait");
+        // Init TypeWriter
+        new TypeWriter(txtElement, words, wait);
       }
     </script>
   </body>

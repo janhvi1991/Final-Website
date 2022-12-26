@@ -227,6 +227,7 @@ h3{
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  background-color: inherit;
 }
 
 /* Next & previous buttons */

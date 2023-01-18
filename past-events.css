@@ -118,146 +118,58 @@ li a:hover {
   padding-top: 50px;
 }
 
-.image{
+.lil-flea, .vintage-garden{
   display: inline-block;
+  position: relative;
   padding: 20px;
 }
 
-p{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  text-align: left;
-  color: #f3fcf0;
+.lil-flea-button, .vintage-garden-button{
+  text-align: center;
+  vertical-align: middle;
+  transition: ease-in;
+  position: absolute; bottom: 0%; left: 50%;
+  transform: translate(-50%, -50%);
   background-color: transparent;
-  line-height: 25px;
+  visibility: hidden;
+  cursor: pointer;
+  transition: 0ms ease-in-out;
 }
 
-h4{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  padding: 3px;
-  text-align: left;
-  color: #f3fcf0;
-  background-color: transparent;
-  margin-bottom: 10px;
-}
-
-a{
-  text-decoration: none;
-  color: inherit;
-  background-color: inherit;
-}
-
-.text-lf{
-  position: absolute;
-  top: 12%;
-  left: 25%;
-  text-align: left;
-  background-color: transparent;
-}
-
-.button-lf{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+.overlay-button{
+  width: 750px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 20px;
-  background-color: #ee4266;
   border: none;
+  position:relative;
+  bottom: 50%;
+  background-color: #000;
   color: #f3fcf0;
-  text-align: center;
-  transition: all 0.5s;
   cursor: pointer;
-  margin-top: 15px;
 }
 
-span{
-  color: inherit;
-  background-color: inherit;
-}
-
-.button-lf span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button-lf span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 80px;
-  transition: 0.5s;
-}
-
-.button-lf:hover span {
-  padding-right: 7px;
-}
-
-.button-lf:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.text-vg{
-  position: absolute;
-  top: 48%;
-  left: 25%;
-  text-align: left;
+.button-text-1{
   background-color: transparent;
+  font-family: 'ailerons-typeface';
+  src: url(ailerons-typeface.otf);
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 15px;
 }
 
-.button-vg{
+.button-text-2{
+  background-color: transparent;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 20px;
-  background-color: #ee4266;
-  border: none;
-  color: #f3fcf0;
-  text-align: center;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-top: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
-span{
-  color: inherit;
-  background-color: inherit;
+.lil-flea:hover .lil-flea-button{
+  visibility: visible;
 }
 
-.button-vg span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.vintage-garden:hover .vintage-garden-button{
+  visibility: visible;
 }
 
-.button-vg span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 80px;
-  transition: 0.5s;
-}
-
-.button-vg:hover span {
-  padding-right: 7px;
-}
-
-.button-vg:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.footer-text{
-  text-align: center;
-}

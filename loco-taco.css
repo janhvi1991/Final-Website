@@ -636,6 +636,18 @@ p{
 }
 
 .container-10{
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.next-steps{
+    background-color: inherit;
+    width: 60%;
+    margin: auto;
+}
+
+.container-11{
   background-color: #f9f9f7;
   padding-top: 70px;
   padding-bottom: 70px;

@@ -4,106 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections</title>
     <link rel="stylesheet" href="test.css" />
-    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   </head>
   <body>
-    <div class="container">
-      <div class="lottie-bg">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player
-          src="https://lottie.host/5a14af91-112d-45b9-bcaa-067110a6a99f/rmbhTSZ6Zq.json"
-          background="transparent"
-          speed="1"
-          style="width: 300px; height: 300px"
-          loop
-          autoplay
-        ></lottie-player>
+    <div id="page-container">
+      <div class="navbar1">
+        <nav>
+          <ul>
+            <div class="div1">
+              <li><a href="index.html">Janhvi Sampat</a></li>
+            </div>
+            <div class="div2">
+              <nav>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+            <div class="div3">
+              <li><a href="#">Design</a></li>
+                <div class="div4">
+                  <a href="fashion.html">Fashion</a>
+                  <a href="ux.html">User Experience</a>
+                </div>
+            </div>
+            <div class="div5">
+              <li><a href="about.html">About</a></li>
+            </div>
+              </nav>
+          </ul>
+        </nav>
       </div>
+      <br>
+      <br>
+      <br>
       <div class="section">
-        <div class="intro1">
-          <h1>Hi, I'm <a href="about.html" class="name">Janhvi</a></h1>
-        </div>
-        <div class="intro2">
-          <p>
-            I am a
-            <span
-              class="txt-type"
-              data-wait="3000"
-              data-words='["fashion designer","project manager","UI/UX student","design enthusiast","cat-mom"]'
-            ></span>
-          </p>
+        <div class="collections">
+          <div class="ajna">
+              <img src="Images/ajna-cover.JPG" alt="ajna-2018" width="350px" class="ajna-image">
+              <div class="ajna-button"><a href="ajna.html"><button class="overlay-button"><p class="button-text-1">AJNA</p><br style="background-color: transparent;"><p class="button-text-2">Spring-Summer 2018</p></button></a></div>
+          </div>
+          <div class="kali">
+              <img src="Images\kali-cover.JPG" alt="kali-2019" width="350px" class="kali-image">
+              <div class="kali-button"><a href="kali.html"><button class="overlay-button"><p class="button-text-1">KALI</p><br style="background-color: transparent;"><p class="button-text-2">Spring-Summer 2019</p></button></a></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <script>
-      class TypeWriter {
-        constructor(txtElement, words, wait = 3000) {
-          this.txtElement = txtElement;
-          this.words = words;
-          this.txt = "";
-          this.wordIndex = 0;
-          this.wait = parseInt(wait, 10);
-          this.type();
-          this.isDeleting = false;
-        }
-
-        type() {
-          // Current index of word
-          const current = this.wordIndex % this.words.length;
-          // Get full text of current word
-          const fullTxt = this.words[current];
-
-          // Check if deleting
-          if (this.isDeleting) {
-            // Remove characters
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-          } else {
-            // Add charaters
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-          }
-
-          // Insert txt into element
-          this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-          // Initial Type Speed
-          let typeSpeed = 70;
-
-          if (this.isDeleting) {
-            // Increase speed by half when deleting
-            typeSpeed /= 2;
-          }
-
-          // If word is complete
-          if (!this.isDeleting && this.txt === fullTxt) {
-            // Make pause at end
-            typeSpeed = this.wait;
-            // Set delete to true
-            this.isDeleting = true;
-          } else if (this.isDeleting && this.txt === "") {
-            this.isDeleting = false;
-            // Move to next word
-            this.wordIndex++;
-            // Pause before start typing
-            typeSpeed = 500;
-          }
-
-          setTimeout(() => this.type(), typeSpeed);
-        }
-      }
-
-      // Init On DOM Load
-      document.addEventListener("DOMContentLoaded", init);
-
-      // Init App
-      function init() {
-        const txtElement = document.querySelector(".txt-type");
-        const words = JSON.parse(txtElement.getAttribute("data-words"));
-        const wait = txtElement.getAttribute("data-wait");
-        // Init TypeWriter
-        new TypeWriter(txtElement, words, wait);
-      }
-    </script>
+      <div class="footer">
+        <p style="font-family: 'Montserrat', sans-serif; font-size: 12px;color: rgb(114, 114, 114);"><i>Padma was launched in 2018 by Janhvi Sampat. This is an archival page for the brand.</i></p>
+        <a href="https://www.facebook.com/padmathelabel/" target="_blank"><img src="Images/icons8-facebook-30.png" alt="" class="icons" style="height: 25px;"></a>
+        <a href="mailto:janhvi1012@gmail.com"><img src="Images/icons8-secured-letter-30.png" alt="" class="icons" style="height: 25px;"></a>
+        <a href="https://www.instagram.com/padmathelabel/" target="_blank"><img src="Images/icons8-instagram-30.png" alt="" class="icons" style="height: 25px;"></a>
+      </div>
   </body>
 </html>

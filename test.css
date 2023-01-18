@@ -1,17 +1,202 @@
-.container{
-  height: 100%;
-  width: 100%;
+/* Page Settings */
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #f3fcf0;
+}
+
+#page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'ailerons-typeface';
+  src: url(ailerons-typeface.otf);
+}
+
+.navbar1{
+  font-family: 'Montserrat', sans-serif;
+  width: 65%;
+  margin: auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+li a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ee4266;
+  font-weight: 600;
+  background-color: inherit;
+}
+
+li a:hover {
+  color: #ffd23f;
+}
+
+.div1{
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  align-items: left;
+  justify-content: left;
+  width: fit-content;
+}
+
+.div2, .div5{
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  align-items: right;
+  justify-content: right;
+  width: fit-content;
+}
+
+.div3 {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  float: right;
+  align-items: right;
+  justify-content: right;
+  width: fit-content;
+}
+
+.div4 {
+  display: none;
+  position: absolute;
+  min-width:max-content;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.div4 a {
+  color: #ee4266;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
   text-align: left;
 }
 
-.lottie-bg{
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: auto;
+/* Show the dropdown menu on hover */
+.div3:hover .div4 {
+  display: block;
 }
 
-section{
-  z-index: 9;
-  margin-top: 500px;
+.div4 a:hover {
+  color: #FFBE0B;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.icons{
+  padding: 10px;
+  align-self: center;
+}
+
+.section{
+  display: block;
+}
+
+.collections{
+  width: 65%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.ajna{
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+}
+
+.kali{
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+}
+
+
+.ajna-button{
+  text-align: center;
+  vertical-align: middle;
+  transition: ease-in;
+  position: absolute; bottom: 0%; left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  visibility: hidden;
+  cursor: pointer;
+  transition: 0ms ease-in-out;
+}
+
+.kali-button{
+    text-align: center;
+    vertical-align: middle;
+    transition: ease-in;
+    position: absolute; bottom: 0%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    visibility: hidden;
+    cursor: pointer;
+    transition: 0ms ease-in-out;
+}
+
+.overlay-button{
+  width: 350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  position:relative;
+  bottom: 50%;
+  background-color: #000;
+  color: #f3fcf0;
+  cursor: pointer;
+}
+
+.button-text-1{
+  background-color: transparent;
+  font-family: 'ailerons-typeface';
+  src: url(ailerons-typeface.otf);
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 15px;
+}
+
+.button-text-2{
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.kali:hover .kali-button{
+  visibility: visible;
+}
+
+.ajna:hover .ajna-button{
+  visibility: visible;
 }

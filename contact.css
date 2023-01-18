@@ -99,25 +99,20 @@ li a:hover {
 .container{
   display: block;
   margin: auto;
-  width: 69%;
+  width: 80%;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 50px;
+  padding-top: 100px;
   align-content: center;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.picture{
-  display:inline-block;
-  text-align: center;
-  width: 38%;
+.container-1, .container-2{
+  display: inline-block;
 }
 
 .info{
-  display: inline-block;
-  margin-left: 30px;
-  width: 55%;
-  text-align: left;
-  position: relative;
+  vertical-align: middle;
 }
 
 .text{
@@ -157,5 +152,3 @@ p{
   font-size: 10px;
   font-weight: 300;
 }
-
-

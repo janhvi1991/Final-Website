@@ -130,7 +130,6 @@ li a:hover {
 
 .name:hover{
   background-color: transparent;
-  font-size: 80px;
   -webkit-text-stroke-color: #ffd23f;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-fill-color: transparent;
